@@ -8,6 +8,11 @@ const fetchVideoInfo = require('youtube-info');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = '2';
 
+client.on('ready', () => { //code bot not leave room voice //Bot Is Online
+    client.channels.get("519991514882113547").join(); //by : ....
+});
+
+
 
 client.on('message', function(message) {
 	const myID = "486200045008453635";
